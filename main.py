@@ -1,16 +1,11 @@
-# This is a sample Python script.
+import tirage
+import saisie
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Présentation des consignes du jeu du pendu.
+print("     ----- LE PENDU ----- \n")
+print("Bienvenue dans le jeu du pendu !!! \n")
+print("Le but de ce jeu est de deviner le mot choisit... avant que votre personnage ne se retrouve entièrement sur l'échaffaud.")
+print("Lors de chaque partie vous aurez le droit à un indice pour vous évitez la potence...")
+print(" !!! Pour faire appel à cet indice écriver le mot : aide, vous pourrez ainsi découvrir l'une des lettres composant le mot. !!!")
+print("Vous avez tout bien compris...")
+print("... alors commençons! \n")
