@@ -1,5 +1,10 @@
+# Importation des modules.
+import affichage
+
+# État du jeu.
 enJeu = True
 
-def en_Cours():
-
-    if:
+# État du jeu si la partie est perdu.
+def Perdu():
+    affichage.erreur = True
+    affichage.essais = 8

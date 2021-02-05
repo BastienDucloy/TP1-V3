@@ -1,10 +1,12 @@
 # Importation des modules.
-import main
 import tirage
+import moteur
 
 # Déclaration des condition et leurs valeurs d'origines.
+
 essais = 0
 erreur = False
+gagne = False
 
 # Fonction pour gérer l'affichage du pendu.
 def affichage_pendu(erreur,essais):
@@ -16,7 +18,7 @@ def affichage_pendu(erreur,essais):
         print(" |")
         print(" |")
         print("-#-")
-        essais = main.chance
+        print('Erreur n° ', essais)
     elif erreur == True and essais == 2:
         print("________")
         print(" |/    |")
@@ -24,7 +26,7 @@ def affichage_pendu(erreur,essais):
         print(" |")
         print(" |")
         print("-#-")
-        essais = main.chance
+        print('Erreur n° ', essais)
     elif erreur == True and essais == 3:
         print("________")
         print(" |/    |")
@@ -32,7 +34,7 @@ def affichage_pendu(erreur,essais):
         print(" |     |")
         print(" |")
         print("-#-")
-        essais = main.chance
+        print('Erreur n° ', essais)
     elif erreur == True and essais == 4:
         print("________")
         print(" |/    |")
@@ -40,7 +42,7 @@ def affichage_pendu(erreur,essais):
         print(" |    /|")
         print(" |")
         print("-#-")
-        essais = main.chance
+        print('Erreur n° ', essais)
     elif erreur == True and essais == 5:
         print("________")
         print(" |/    |")
@@ -48,7 +50,7 @@ def affichage_pendu(erreur,essais):
         print(" |    /|\ ")
         print(" |")
         print("-#-")
-        essais = main.chance
+        print('Erreur n° ', essais)
     elif erreur == True and essais == 6:
         print("________")
         print(" |/    |")
@@ -56,7 +58,7 @@ def affichage_pendu(erreur,essais):
         print(" |    /|\ ")
         print(" |    / ")
         print("-#-")
-        essais = main.chance
+        print('Erreur n° ', essais)
     elif erreur == True and essais == 7:
         print("________")
         print(" |/    |")
@@ -64,8 +66,9 @@ def affichage_pendu(erreur,essais):
         print(" |    /|\ ")
         print(" |    / \ ")
         print("-#-")
-        essais = main.chance
+        print('Erreur n° ', essais)
     elif erreur == True and essais == 8:
         print("\n!!! DOMMAGE, VOUS AVEZ PERDU !!!")
         print("\n:(")
-        print("Le mot que vous cherchiez était", tirage.mot)
+        print("\nLe mot que vous cherchiez était :", tirage.mot)
+        moteur.enJeu = False
