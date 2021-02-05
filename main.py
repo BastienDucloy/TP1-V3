@@ -68,15 +68,15 @@ while moteur.enJeu:
 # Permet de gérer les erreurs du joueur et d'afficher le pendu
     if lettre not in mot_selectionne and lettre != "indice":
 
-# incrementation du compteur nb_tour
+# Incrémentation du compteur nb_tour
         nb_tour = nb_tour + 1
         print("Erreur : la lettre '" + lettre + "' ne se trouve pas dans le mot.")
         affichage.erreur = True
         affichage.affichage_pendu(affichage.erreur, affichage.essais+nb_tour)
 
-# Permet d'afficher les lettres trouvées par le joueur daans le mot
+# Permet d'afficher les lettres trouvées par le joueur dans le mot
     if lettre in mot_selectionne and lettre != "indice":
-    #remplissage du mot vide avec la lettre trouvée
+    #Remplissage du mot vide avec la lettre trouvée
         while position < len(mot_selectionne):
                 lettre_lue = mot_selectionne[position]
                 if lettre_lue == lettre:
